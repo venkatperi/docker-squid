@@ -1,0 +1,6 @@
+#!/usr/bin/with-contenv bash
+if [[ ! -e /var/spool/squid3/00 ]]; then
+  echo "Creating squid cache dirs..."
+  squid3 -N -f ${SQUID_CONF_DIR}/squid.conf -z
+fi
+

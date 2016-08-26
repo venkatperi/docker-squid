@@ -1,0 +1,3 @@
+#!/usr/bin/with-contenv bash
+exec squid3 -f ${SQUID_CONF_DIR}/squid.conf -NYCd 1
+
